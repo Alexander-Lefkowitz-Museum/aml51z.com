@@ -1,0 +1,69 @@
+body {
+	background-color:#000;
+}
+#contain {
+	width:600px;
+	margin:0 auto;  /* centers content */
+	background-color: #888;
+	font-size:0;
+	/* the font in the container is set to 0 because in
+	   some browsers the font size will apply to empty content
+	   which may cause tight layouts to mess up, we redefine
+	   the font size on the elements inside the container */
+}
+#contain > div,
+#contain > header {
+	font-size:12px;
+}
+#contain header {
+	height:100px;
+	background-color: #aaa;
+}
+#contain header h1 {
+	padding:1px;
+}
+
+#contain header h2.subHead {
+	padding:1px;
+}
+#contain #content-contain {
+	background-color: #444;
+	overflow:hidden;
+	/* overflow:hidden is applied here to make sure content stays
+	   in our containing box */
+	   
+}
+#contain #techBadges {
+	border:white solid 4px;
+	background-color:#fff;
+}
+#contain #content-contain #navigation,
+#contain #content-contain section, {
+	display:inline-block;
+	vertical-align: top;
+}
+#contain #content-contain #navigation {
+	width:30%;
+	background-color:#55f
+}
+#contain  #didYou {
+font-size:12px;
+background-color:#666
+}
+#contain #content-contain section {
+	width:70%;
+}
+#contain #content-contain #content {
+	overflow:hidden;
+	/*because there is content inside #content that has
+	  margin, such as the h tags, overflow:hidden; makes sure
+	  that the margins don't leak out of the element and mess up
+	  our layout */
+	background-color:#5f5
+}
+#content h2 {
+	color:red
+}
+#content p {
+	font-size:14px
+}

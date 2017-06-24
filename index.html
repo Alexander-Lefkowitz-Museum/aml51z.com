@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!-- My name is Alexander Lefkowitz, I like to do things by hand. The web suffers from frameworkitis.
+     This should be the basic of a website -->
+<html>
+<head>
+    <!-- Tells the browser to expect utf-8 encoded text, xml stuff can be screwy without it -->
+    <meta charset="utf-8">
+    <!-- Tells iOS - safari to get rid of the top menu
+         if the page is saved to the home screen. It's optional but I like it -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- X-UA-Compatible tells Internet Explorer what this site expects to be rendered
+         with, IE=edge means to use the latest rendering engine, so if you use IE9, IE will
+         render the page with the IE9 engine. If you use IE=7, IE9 will render with the IE7
+         engine. chrome=1 tells the browser to use Chrome Frame if it's installed. Wow I'm old. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- viewport tells the browser how to render within it's dimentions, for instance a
+         page 100 pixels wide can be rerendered to fill the entire width yet still report
+         the last horizontal pixel as 100 rather then say... 900 -->
+    <meta name="viewport" content="initial-scale=1"> 
+    <title>Alexander Lefkowitz's UI dev portal</title>
+    <meta name="description" content="">
+    <!-- style sheets should always be at the top -->
+    <!-- basics.css is a stylesheet that handles all the cross browser bull
+         that we don't want to deal with, it overrides default styles so that
+         these cross browser nuances don't exist and handles common obvious styles
+         to match the HTML5 spec such as adding "hidden" to a tag to make it disappear --> 
+    <link rel="stylesheet" type="text/css" href="assets/styles/css/basics.css">
+    <!-- I generally use a seperate stylesheet for individual sites -->
+    <link rel="stylesheet" type="text/css" href="assets/styles/css/main.css">
+</head>
+<body>
+<!-- portraitMode is a div that is only visible when a device is in landscape mode
+     unsupported is a div that is only visible when the browser doesn't support HTML5
+     However this site is compatible down to IE7 so we don't need these.
+
+    <div id="portraitMode"><div>Please rotate to landscape mode.</div></div>
+    <div id="unsupported"><div>
+        Please update your browser<br><br>
+        This site requires at least:<br>
+        - Internet Explorer 9<br>
+        - Firefox 4.0<br>
+        - Safari 5.1<br>
+        - Chrome 10
+    </div></div>
+    -->
+    <!-- site content should always be wrapped in a container div, this makes working
+        with the layout much easier. If you wanted to have a site that renders in the
+        middle of the screen, you would just have to center the container div -->
+<div class="container">
+  <div class="top">
+    <div class="contact"><a href="mailto:aml51z@outlook.com">aml51z&#64;outlook.com</a>
+    Phone: (845)  464 - 8776<br>
+    <a href="https://www.linkedin.com/in/alexlefkowitz">LinkedIn</a></div>
+    <div class="topText">
+      <div class="name">
+        <div class="alex">Alexander</div>
+        <div class="lefkowitz">Lefkowitz<br />
+        </div>
+      </div><div class="programmer">/*UI Developer*/</div>
+ </div>
+  </div>
+  <div class="leftSection">
+    <div id="about" class="section">About Me</div>
+    <div id="aboutInfo" class="subInfo">
+    <a href="#skills" class="educationHref">Education and Skills</a>
+    <a href="#companies" class="companyHref">Companies I've worked for</a>
+    <a href="#resume" class="resumeHref">Resume</a>
+    <a href="#statement" class="personalHref">Personal Statement</a>
+    <a href="#hateMachine" class="boredHref">Internet Hate Machine!<br> (NEW! for UI people!)</a>
+    </div>
+    <div id="example" class="section">Samples</div>
+    <div id="exampleInfo" class="subInfo">
+    <a href="#frontend" class="frontHref">Front end development</a>
+    <a href="#backend" class="backHref">Back end development</a>
+    <a href="#flash" class="flashHref">Flash</a> </div>
+    <br />
+  </div>
+  <div class="rightSection">
+  <div class="fill">
+<div class="round">
+<div class="tl"></div><div class="t"></div><div class="tr"></div><div class="l"></div><div class="r"></div>
+<div class="bl"></div><div class="b"></div><div class="br"></div><div class="back"></div>
+</div>
+</div>
+  <div id="dynaFill">
+  <!--insert sections here-->
+  <div id="sectionName"></div>
+  <div id="statement">
+  <img src="assets/images/myself.jpg" class="myself" />
+  <p>My name is Alexander Lefkowitz, I’m a programmer, analyst, and developer. It’s my passion; it’s my means of art and expression.    Programming is more than a tool; to me it’s how an idea turns into reality.</p>
+<p>Whether on my own or in collaboration my goal is to make something that exceeds expectations.</p>
+<br><img src="assets/images/badges.png" class="badge"/>
+<p>I'm also a web game developer currently sinking my teeth into mobile game developement!</p>
+<p>
+<img src="assets/images/brim2.jpg" class="Brim2"/>
+<br>Please Check out my front end samples.</p>
+</div>
+    <div id="skills">
+      <p>After graduating High School I went to many technical institutes for computers, CTECH for Principals of Technology, C++ and Javascript, NETCOM in Manhattan for C++, C#.NET, and Network+. I have also attended Rockland Community College for networking and programming.</p>
+      <p>I have also worked in IT departments for many different companies and have acquired 9+ years of industry and hands on experience.</p>
+      <p>I have learned and used a variety of different computer programming and scripting languages.</p>
+      <p>As of now I know:<br />
+        Object Oriented Javascript, jQuery, JSON, XML, CSS2, CSS3, SASS, LESS, XHTML, HTML, HTML5, HTML5 Video, Smarty, TWIG, Yahoo! Widgets/Konfabulator, SWFobject, Freewheel, Conviva, and a working knowledge of Angular.js, D3, Dojo, PHP, C# and C++.</p>
+    </div>
+    <div id="companies">
+      <p>Much of my experience has been through working with hands on  projects for designers and project managers. The companies and organizations I have worked for include</p>
+      <ul>
+          <li>ADP in Roseland, NJ</li>
+          <li>Droga5 in NYC, NY</li>
+          <li>All Things Media in Mahwah, NJ</li>
+          <li>CNBC in Englewood Cliffs, NJ</li>
+          <li>KM Newspaper in Monroe, NY</li>
+          <li>Yeshiva University in NYC, NY</li>
+          <li>National Parts Depot in Chester, NY</li>
+      </ul>
+      <br />
+      <p>I have worked with companies through my web hosting company Web Quest Hosting and as an independant contractor.</p>
+      </p>
+    </div>
+    <div id="resume">
+      <p>My resume is available in Microsoft Word format.<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="-resume_ui_main.doc">Download</a></p>
+    </div>
+    <div id="hateMachine">
+        <h3>Captains Log - 10:55pm - May 6th 2016</h3>
+        <p><strong>I don't like AngularJS and neither should you:</strong> Who would have known that once I added what I would loosly call a "UI blog" to my site that an avalanche of things I want to point out to the internet would be greater then my internet patience.
+        </p>
+        <p>My first experience oddly enough comes from a public facing website, a rather large on I won't mention. While loading I saw {{ expressions in brackets }}. Now maybe I'm oldschool but wasn't the whole point in half the standards I work in now exist so that the user can access content on most devices and software? What if the user uses TOR and can't use JavaScript. I feel that AngularJS is a front-end framework for Java programmers for prototyping purposes.</p>
+        <br />
+        <img src="https://cdn.meme.am/instances/400x/64638845.jpg" />
+        <br />
+        <p>
+        Another problem I noticed, thought I suppose less a problem and more the nature of UI work, is that many times important financial information is being processed on the front end instead of the backend. I'm going to make this clear...FRONT END IS EXACTLY WHAT IT SAYS, THE FRONT END OF THE PRODUCT. You should NEVER use JavaScript in any way to handle such important information, only output and experience.
+        </p>
+        <p>If I wanted to make a virus I would hook my code straight into the injections and directives. Who knows what behind the scenes action is going on.</p>
+        <h3>Captains Log - 5:34pm - May 5th 2016</h3>
+      <p>What's it like being on the internet when your trade involves making websites? I would expect a car machanic to see random things that would go over my head as he drives around traffic, noticing different sounds, behaviors, and who knows what else when it comes to other cars and drivers. Personally my experience with cars involves filling up at the pump and writing "clean me" on the back of dirty SUV windows.</p>
+      <p>First thing that comes to mind is HOLY CRAP I wrote this site your reading right now back in 2008. The most recent code I added was the Did You Know? section on the bottom.</p>
+      <p>The second thing I noticed is... wow I got LUCKY deciding to stay with JavaScript and HTML5, although I started out with Flash... and I think Steve Jobs (rip) was too hard on Adobe, I'm glad the world values people who likes to tinker with style sheets and turn browsers into application containers.</p>
+      <img src="https://i.imgur.com/Z5o9aQ9.jpg" /><br />
+      <p>
+          But is that what the world wants? Oh JavaScript, you did right with the ECMA standard, but who the hell put Java as the first part of your name?
+      </p>
+      <img src="https://i.imgur.com/MilKmny.png" /><br /><br />Sigh....<br />
+      <img src="http://i3.kym-cdn.com/photos/images/newsfeed/000/228/791/632.gif" />
+    </div>
+    <div id="frontend">
+      <img src="assets/images/yeshiva.jpg" width="200" height="200" alt="TU" /><img src="assets/images/royaltone.jpg" width="200" height="200" alt="RT" />
+      <p>I have worked for CNBC, All Things Media, Yeshiva Univercity, National Parts Depot, Droga5, and various agencies.</p>
+      <p>My particular niche is single page web applications, the majority of the UI work I have done involves my competency in HTML(5), CSS, JavaScript, jQuery, SASS, LESS, JSON, XML, Photoshop, and various other smaller text, font, and debugger tools. 
+      </p>
+      <ul>
+        <li><a href="http://www.bringyourchallenges.com/" title="Bring Your Challenges">Bring Your Challenges (interactions, mobile, SEO, some behind the scenes work)</a></li>
+        <li><a href="http://bridscloset.com/comptia/" title="CompTia Ebook">CompTia Ebook platform </a></li>
+        <li><a href="/fctuts/" title="Pearson fctuts">Pearson MyFinanceLab Financial Calculator Tutorials (JS and mobile work, some video work)</a></li>
+        <li><a href="/positioner/" title="Positioner JSON Tool">JSON Generator / Database creater for car parts diagrams</a></li>
+        <li><a href="/anagh/new/index.php" title="Anagh">Anagh Tech Site design prototype</a></li>
+        <li><a href="http://qa.assetlibrary.cnbc.com/library/web/modules.php" title="CNBC QA">Various CNBC modules, scripts, and sliders (outdated)</a></li>
+        <li><a href="/brocair/" title="Brocair">Brocair (OLD)</a></li><li><a href="/deli/" title="Munno's Deli">Munno's Deli (OLD)</a></li>
+      </ul>
+    </div>
+    <div id="backend"><img src="assets/images/tnpp.gif" width="200" height="200" alt="tnpp" />
+      <p>My backend works includes work done in ASP, ASP.NET/C#, javascript and some SQL.</p>
+      <p>I have worked for Domestic Securities, National Parts Depot, and have consulted for various clients. Most of my work has been for internal applications and kiosks.</p>
+      <p>A fine online example of my work can be found at National Parts Depot TNPP website.</p>
+      <ul>
+        <li><a href="http://www.nationalparts.com/tnpp/tnppinv.aspx" target="_blank">http://www.nationalparts.com/tnpp/tnppinv.aspx (might be down, it's their database)</a></li>
+      </ul>
+    </div>
+    <div id="flash">
+      <p>I have worked on many Flash projects in the past.<br>I'm currently working on a new project called Brimstone<br><img src="assets/images/brim1.jpg" class="Brim1"/></p>
+      <ul>
+        <li>Universal  War: Lost Civilization (has over 2.5 million downloads)</li>
+      </ul>
+      <p><a href="/web/20110519005000/http://www.newgrounds.com/portal/view/87004">http://www.newgrounds.com/portal/view/87004</a></p>
+      <ul>
+        <li>3D  Pong</li>
+      </ul>
+      <p><a href="/web/20110519005000/http://www.newgrounds.com/portal/view/260014">http://www.newgrounds.com/portal/view/260014</a></p>
+      <ul>
+        <li>Retronoid  FS</li>
+      </ul>
+      <p><a href="/web/20110519005000/http://www.newgrounds.com/portal/view/236072">http://www.newgrounds.com/portal/view/236072</a></p>
+<p>Most of these are available on Newgrounds but have also been featured on many other popular Flash game web pages such as:</p><ul>
+       <li>freeworldgroup.com</li>
+        <li>addictinggames.com</li>
+        <li>newsandentertainment.com</li>
+        <li>smashingames.com</li>
+        <li>2flashgames.com</li>
+        <li>2dplay.com</li>
+        <li>agame.com</li>
+        <li>flasharcade.com</li>
+        <li>funnycrazygames.com</li>
+        <li>coolgames.com</li>
+        <li>blitzgamer.com</li>
+        <li>arcadehaven.net</li>
+        </ul>
+    </div>
+    <br clear="all"  />
+  </div>
+</div>
+  
+
+
+
+  
+</div><div class="bottom">
+
+<div id="didYou">
+                <ul>
+                    <li class="show">Here's some random thoughts I've had while coding and answers to interview questions.<br>(not important but click here toggle through them.)</li>
+                    <li>I think that instead of blocking people who use adblock, site's should just show all content in Comic Sans in all it's glory.</li>
+                    <li>If I'm at work early, either I was asked to come in early, I have a deadline, or my dog woke me up earlier then usual.</li>
+                    <li>I think everybody deserves a theme song, I just don't think anybody should choose their own.</li>
+                    <li>Believe it or not you CAN have too many frameworks...</li>
+                    <li>I know at LEAST 5 Chuck Norris jokes.</li>
+                    <li>I'm a great tipper. 20% AFTER the tax!</li>
+                    <li>I once lived in NJ and worked in NY followed by working in NJ and living in NY</li>
+                    <li>I once had a dream involving cross browser issues and IE6 :(</li>
+                    <li>I started JavaScript because I was good at ActionScript 1.0 while making Flash Games.</li>
+                    <li>My hobbies includes Law & Order trivia, coding interesting things, and retro video games.</li>
+                    <li>One day I hope to program an NES game/ROM</li>
+                    <li>I didn't think the Seinfeld final episode was that bad.</li>
+                    <li>Sometimes going to work feels like taking a break from life.</li>
+                    <li>Nobody can beat me in Mortal Kombat 3. Trust me many have tried.</li>
+                    <li>I come from a family of number people, I trained my younger brother to code, my older brother codes, my dad is an accountant and investment manager, and my mom owns her own store.</li>
+                    <li>I find it odd that our eyes are actually in the MIDDLE of our faces and not near the top.</li>
+                    <li>Watch out! I'm about to use an unsupported blink tag!</li>
+                    <li>Nah, just kidding. I'm not evil.</li>
+                    <li>Am I the only web developer that likes the anime Dragonball? BTW I like the anime Dragonball.</li>
+                    <li>I've spent more time playing Doom then I care to admit.</li>
+                    <li>Nothing beats dubstep or some good techno while coding.</li>
+                    <li>Nothing beats rock when I'm done coding.</li>
+                    <li>(a pot of strong coffee doesn't hurt either)</li>
+                    <li>I think the Metroid franchise has the best music of any video game.</li>
+                    <li>I really like C#, I need to sink my teeth into it more.</li>
+                    <li>Why was the JavaScript developer sad?... Because he didn’t Node how to Express himself. (Drum Drum Cymble!)</li>
+                    <li>How much wind will a wind mill mill if a windmill will mill wind?</li>
+                    <li>I think if bigfoot existed the ultimate time tested weapon to keep it away from you would be a camera.</li>
+                    <li>I wasn't good at Dojo so I had to pick myself up by my Bootstraps and....  Learn more Dojo? Ok I'm out of JavaScript jokes.</li>
+                    
+                </ul>
+                </div>
+
+Created with Photoshop, Notepad, Dreamweaver and about four cups of coffee. // Alexander Lefkowitz // 2016</div>
+
+<!-- script tags should almost always go on the bottom of a page, there
+     are many reasons for this, it allows the page contents to load and
+     render before the scripts run which eliminates the need to use
+     $(document).ready(function () { your code }) -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script type="text/javascript">
+"use strict";
+// "use strict" tells javascript to enforce better coding standards.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode
+
+//It should always be used as it throws errors on code that should
+//not be used, like the with() commands which has notorious cross browser
+//issues 
+</script>
+<script type="text/javascript" src="assets/scripts/main.1.js"></script>
+</body>
+</html>

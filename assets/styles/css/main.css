@@ -1,0 +1,303 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	background-image: url(../../../assets/images/bg.png);
+	background-repeat: no-repeat;
+	background-color: #000;
+	background-position: center top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+}
+ul {
+	margin-left: 2em;
+	list-style-type: square;
+}
+ul li {
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.bottom {
+	clear: both;
+	text-align: right;
+	font-style: italic;
+	bottom: 0px;
+	width: 940px;
+	display: block;
+	font-size: 14px;
+	margin: 0 auto 0 auto;
+	position: relative;
+}
+a {
+	display: block;	
+}
+a:link {
+	color: #EEEEEE;
+}
+a:visited {
+	color: #EEEEEE;
+}
+a:hover {
+	color: #B9CEE1;
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #6DB2E1;
+	padding-left: 4px;
+}
+a:active {
+	color: #81A7C9;
+}
+.container {
+	width: 940px;
+	margin: 23px auto 30px auto;
+	padding: 2px;
+	min-height: 415px;
+}
+#statement, #skills,#companies,#resume,
+#frontend,#backend, #flash, #hateMachine {
+	display:none;
+}
+ 
+#date {
+	float: right;
+	width: 50%;
+	text-align: right;
+	color: #B9CEE1;
+}
+
+.icon   {
+	font-size: 24px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: normal;
+}
+.top {
+}
+
+.top .name{
+	text-align: center;
+	width: 180px;
+	border-right-width: 2px;
+	border-left-width: 2px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCC;
+	border-left-color: #CCC;
+}
+.top .alex {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 28px;
+}
+.top .lefkowitz {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	letter-spacing: 9px;
+	font-size: 21px;
+	line-height: 18px;
+	text-indent: 5px;
+	color: #B9CEE1;
+}
+.top .contact {
+	float: right;
+	font-size: 16px;
+	color: #B9CEE1;
+	text-align: right;
+}
+.top .topText .programmer  {
+	color: #B9CEE1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	letter-spacing: 6px;
+	margin: 11px 0 20px 10px;
+}
+.rightSection {
+	margin-left: 25%;
+	padding-left: 14px;
+	height: 100%;
+	display: block;
+	position: relative;
+	min-height: 200px;
+}
+.rightSection .fill  {
+	position: absolute;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	opacity:0.10;
+	filter:alpha(opacity=10);
+	z-index: 4;
+	display: block;
+	width: 100%;
+}
+.rightSection .fill .round {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.rightSection .fill .round .back {
+	background-color: #FFF;
+	position: absolute;
+	top: 15px;
+	bottom: 15px;
+	right: 15px;
+	left: 15px;
+}
+ .rightSection .fill .round .tl {
+	position: absolute;
+	left: 8px;
+	width: 15px;
+	height: 15px;
+	top: 0%;
+	background-image: url(../../../assets/images/round.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+.rightSection .fill .round .t {
+	height: 15px;
+	background-color: #FFF;
+	left: 23px;
+	right: 15px;
+	position: absolute;
+}
+ .rightSection .fill .round .tr {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	right: 0px;
+	top: 0%;
+	background-image: url(../../../assets/images/round.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+ .rightSection .fill .round .bl {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	bottom: 0%;
+	background-image: url(../../../assets/images/round.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	left: 8px;
+}
+ .rightSection .fill .round .br {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	bottom: 0%;
+	background-image: url(../../../assets/images/round.png);
+	background-position: right bottom;
+	right: 0px;
+}
+.rightSection .fill .round .b {
+	height: 15px;
+	background-color: #FFF;
+	position: absolute;
+	bottom: 0px;
+	left: 23px;
+	right: 15px;
+}
+.rightSection .fill .round .l {
+	background-color: #FFF;
+	position: absolute;
+	top: 15px;
+	bottom: 15px;
+	width: 15px;
+	left: 8px;
+}
+.rightSection .fill .round .r {
+	background-color: #FFF;
+	position: absolute;
+	top: 15px;
+	bottom: 15px;
+	width: 15px;
+	right: 0px;
+}
+.rightSection #dynaFill {
+	padding: 8px;
+	display: block;
+	height: 100%;
+	z-index: 5;
+	position: relative;
+}
+.rightSection #hateMachine img{
+	max-width: 600px;
+	display:block;
+	text-align: center;
+}
+.rightSection #dynaFill #sectionName {
+	font-size: 18px;
+	color: #B9CEE1;
+	font-weight: bold;
+	margin-bottom: 1em;
+	text-decoration: underline;
+	font-style: italic;
+	display: block;
+}
+.rightSection #dynaFill p  {
+	text-indent: 2em;
+	margin-bottom: 1em;
+}
+.rightSection #dynaFill .myself  {
+	float: right;
+	margin: 0 8px 8px 0;
+}
+.rightSection #dynaFill #flash li {
+	margin-left: 20px;
+}
+.rightSection #dynaFill #frontend img{
+	margin: 4px;
+	float: right;
+}
+.rightSection #dynaFill #backend img {
+	float: right;
+	margin: 4px;
+}
+.leftSection {
+	width: 25%;
+	position: relative;
+	padding-left: 10px;
+	float: left;
+	display: block;
+	overflow: hidden;
+}
+.leftSection .subInfo {
+	padding-left: 26px;
+}
+.leftSection .section {
+	font-weight: bold;
+	background-image: url(../../../assets/images/list.gif);
+	background-repeat: no-repeat;
+	padding-left: 16px;
+	background-position: left center;
+}
+.leftSection .subInfo a {
+	display: block;
+}
+.leftSection .leftBottom {
+	font-weight: bold;
+	font-size: 18px;
+	width: 80%;
+	margin: 0 auto 0 5px;
+}
+#didYou li { display:none; }
+#didYou ul {
+    background: rgba(45, 45, 45, 0.5) url("../../../assets/images/mind.png") no-repeat scroll 19px center;
+    border-radius: 7px;
+    font-size: 18px;
+    margin-bottom: 24px;
+    margin-left: 0;
+    padding: 26px;
+    text-align: center;
+    text-indent: 68px;
+    cursor: pointer;
+}
+.badge {border: 9px solid #fff;
+    margin: 30px;}
+.show {display:block !important;}
