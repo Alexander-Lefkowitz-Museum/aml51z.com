@@ -99,6 +99,11 @@ var portfolio = {
 			 self_setTitle("Front end Samples");
 		});
 		
+		$('.recruiterHref').on("click", function() {
+			self.clearFades();
+			 $('div#recruiter').slideDown('fast');
+			 self_setTitle("Recruiters please read");
+		});
 		$('.backHref').on("click", function() {
 			self.clearFades();
 			 $('div#backend').slideDown('fast');
