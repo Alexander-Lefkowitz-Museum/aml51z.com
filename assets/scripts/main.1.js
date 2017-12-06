@@ -130,6 +130,7 @@ var portfolio = {
 		 +"#hateMachine,"
 		 +"#politics,"
 		 +"#skills,"
+		 +"#recruiters,"
 		 +"#humor,"
 		 +"#companies,"
 		 +"#resume,"

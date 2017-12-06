@@ -59,7 +59,7 @@ a:active {
 	padding: 2px;
 	min-height: 415px;
 }
-#statement, #skills,#companies,#resume,
+#statement, #skills,#companies,#resume,#recruiter,
 #frontend,#backend, #flash, #hateMachine,#politics,#humor {
 	display:none;
 }
@@ -304,7 +304,7 @@ a:active {
 #politics h2 {
 	text-align: center
 }
-#politics h3 {
+#dynaFill h3 {
     background-color: rgba(255,255,255,.1);
     padding: 3px;
     margin: 5px 0px;
