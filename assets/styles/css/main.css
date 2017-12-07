@@ -304,6 +304,9 @@ a:active {
 .badge {border: 9px solid #fff;
     margin: 30px;}
 .show {display:block !important;}
+#politics p:first-child {
+	font-size:19px;
+}
 #politics h2 {
 	text-align: center
 }
@@ -313,8 +316,14 @@ a:active {
     margin: 5px 0px;
     border-radius: 7px;
     text-indent: 6px;
+    display:block;
 }
-
+#dynaFill h3 strong {
+	font-size: 11px;
+	float:right;
+    color: #bbb;
+    font-weight: normal;
+}
 .recruiter a,.recruiter {
     font-size: 10px;
     line-height: 13px;
@@ -325,4 +334,7 @@ a:active {
 	border:0 solid #000;
 	padding-left:0;
 	color:#B9CEE1;
+}
+.bump {
+	margin-top:8px;
 }

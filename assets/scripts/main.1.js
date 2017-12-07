@@ -56,6 +56,7 @@ var portfolio = {
 	setEvents: function () {
 		var self = this;
 		var self_setTitle = self.setTitle;
+		//yes I know this isn't the most optimal way of doing this, this will be rewritten soon (Alex L)
 		$('.educationHref').on("click", function() {
 			self.clearFades();
 			 $('div#skills').slideDown('fast');
@@ -84,7 +85,7 @@ var portfolio = {
 		});
 		$('.resumeHref').on("click", function() {
 			self.clearFades();
-			 $('div#resume').slideDown('fast');
+			 $('#resume').slideDown('fast');
 			 self_setTitle("Resume");
 		});
 		$('.personalHref').on("click", function() {
@@ -95,24 +96,24 @@ var portfolio = {
 		
 		$('.frontHref').on("click", function() {
 			self.clearFades();
-			 $('div#frontend').slideDown('fast');
+			 $('#frontend').slideDown('fast');
 			 self_setTitle("Front end Samples");
 		});
 		
 		$('.recruiterHref').on("click", function() {
 			self.clearFades();
-			 $('div#recruiter').slideDown('fast');
+			 $('#recruiter').slideDown('fast');
 			 self_setTitle("Recruiters please read");
 		});
 		$('.backHref').on("click", function() {
 			self.clearFades();
-			 $('div#backend').slideDown('fast');
+			 $('#backend').slideDown('fast');
 			 self_setTitle("Back end Samples");
 		});
 		
 		$('.flashHref').on("click", function() {
 			self.clearFades();
-			 $('div#flash').slideDown('fast');
+			 $('#flash').slideDown('fast');
 			 self_setTitle("Flash Samples");
 		});
 	},
@@ -135,7 +136,7 @@ var portfolio = {
 		 +"#hateMachine,"
 		 +"#politics,"
 		 +"#skills,"
-		 +"#recruiters,"
+		 +"#recruiter,"
 		 +"#humor,"
 		 +"#companies,"
 		 +"#resume,"
