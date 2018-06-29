@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!-- My name is Alexander Lefkowitz, I like to do things by hand. The web suffers from frameworkitis.
      This should be the basic of a website -->
@@ -8,7 +7,7 @@
     <meta charset="utf-8">
     <!-- Tells iOS - safari to get rid of the top menu
          if the page is saved to the home screen. It's optional but I like it -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
     <!-- X-UA-Compatible tells Internet Explorer what this site expects to be rendered
          with, IE=edge means to use the latest rendering engine, so if you use IE9, IE will
          render the page with the IE9 engine. If you use IE=7, IE9 will render with the IE7
@@ -17,14 +16,14 @@
     <!-- viewport tells the browser how to render within it's dimentions, for instance a
          page 100 pixels wide can be rerendered to fill the entire width yet still report
          the last horizontal pixel as 100 rather then say... 900 -->
-    <meta name="viewport" content="initial-scale=1"> 
+    <meta name="viewport" content="initial-scale=1">
     <title>Alexander Lefkowitz's UI dev portal</title>
     <meta name="description" content="">
     <!-- style sheets should always be at the top -->
     <!-- basics.css is a stylesheet that handles all the cross browser bull
          that we don't want to deal with, it overrides default styles so that
          these cross browser nuances don't exist and handles common obvious styles
-         to match the HTML5 spec such as adding "hidden" to a tag to make it disappear --> 
+         to match the HTML5 spec such as adding "hidden" to a tag to make it disappear -->
     <link rel="stylesheet" type="text/css" href="assets/styles/css/basics.css">
     <!-- I generally use a seperate stylesheet for individual sites -->
     <link rel="stylesheet" type="text/css" href="assets/styles/css/main.css">
@@ -44,332 +43,618 @@
         - Chrome 10
     </div></div>
     -->
-    <!-- site content should always be wrapped in a container div, this makes working
-        with the layout much easier. If you wanted to have a site that renders in the
-        middle of the screen, you would just have to center the container div -->
+<!-- site content should always be wrapped in a container div, this makes working
+    with the layout much easier. If you wanted to have a site that renders in the
+    middle of the screen, you would just have to center the container div -->
 <div class="container">
-  <div class="top">
-    <div class="contact"><a href="mailto:aml51z@outlook.com">aml51z&#64;outlook.com</a>
-    Phone: (845)  464 - 8776<br><span class="recruiter">(If you're a recruiter, email me first. Do not call me if I don't <br>reply immediately. <a href="#recruiter" class="recruiterHref"> And please click here.</a>)</span>
-    <a href="https://www.linkedin.com/in/alexlefkowitz">LinkedIn</a></div>
-    <div class="topText">
-      <div class="name">
-        <div class="alex">Alexander</div>
-        <div class="lefkowitz">Lefkowitz<br />
-        </div>
-      </div><div class="programmer">/*UI Developer*/</div>
- </div>
-  </div>
-  <div class="leftSection">
-    <div id="about" class="section">Technical Work</div>
-    <div id="aboutInfo" class="subInfo">
-    <a href="#skills" class="educationHref">Education and Skills</a>
-    <a href="#companies" class="companyHref">Companies I've worked for</a>
-    <a href="#resume" class="resumeHref">Resume</a>
-    <a href="#recruiter" class="recruiterHref">Are you a recruiter?</a>
-    <a href="#statement" class="personalHref">Personal Statement</a>
-    </div>
-    <div id="example" class="section">Samples</div>
-    <div id="exampleInfo" class="subInfo">
-    <a href="#frontend" class="frontHref">Front end development</a>
-    <a href="#backend" class="backHref">Back end development</a>
-    <a href="#flash" class="flashHref">Flash</a> </div>
-
-    <div id="personal" class="section">Personal</div>
-    <div id="personalInfo" class="subInfo">
-    <a href="#politics" class="politicsHref">Politics!</a>
-    <a href="#humor" class="humorHref">Rambling oh my!</a>
-    <a href="#hateMachine" class="boredHref">Internet Hate machine<br>BLOG!</a>
-    <br /></div>
-  </div>
-  <div class="rightSection">
-  <div class="fill">
-<div class="round">
-<div class="tl"></div><div class="t"></div><div class="tr"></div><div class="l"></div><div class="r"></div>
-<div class="bl"></div><div class="b"></div><div class="br"></div><div class="back"></div>
-</div>
-</div>
-  <div id="dynaFill">
-  <!--insert sections here-->
-  <div id="sectionName"></div>
-  <div id="statement">
-      <img src="assets/images/myself.jpg" class="myself" />
-      <p>Hello everybody, my name is Alexander Lefkowitz, this webpage is more or less a blog/portfolio/insight type page I created for anything me related. I started it in 2005 and over time have have settled on what you see here which I hope gives you an idea of who I am, my personality, and my UI developer career.</p>
-      <p>I’m a programmer, analyst, and developer. It’s my passion; it’s my means of art and expression. Web programming is more than a tool; to me it’s how an idea turns into reality.</p>
-        <p>Whether on my own or in collaboration my goal is to make something that exceeds expectations.</p>
-        <br><img src="assets/images/badges.png" class="badge"/>
-        <p>I'm a web game developer currently sinking my teeth into mobile game developement!</p>
-        <p>And finally I'm a humor writer. Involved in various unrelated writing endeavours.</p>
-        <p>
-        <img src="assets/images/brim2.jpg" class="Brim2"/>
-        <br>Please Check out my front end samples.<br><br>
-        Note: This site was coded back in 2012 so although not terrible is very simple and uses no advances frameworks other then a little jQuery for some quick fade effects that work on all browsers.</p>
-    </div>
-    <div id="skills">
-      <p>After graduating High School I went to many technical institutes for computers, CTECH for Principals of Technology, C++ and Javascript, NETCOM in Manhattan for C++, C#.NET, and Network+. I have also attended Rockland Community College for networking and programming.</p>
-      <p>I have also worked in IT departments for many different companies and have acquired 9+ years of industry and hands on experience.</p>
-      <p>I have learned and used a variety of different computer programming and scripting languages.</p>
-      <p>As of now I know:<br />
-        Object Oriented Javascript, jQuery, JSON, XML, CSS2, CSS3, SASS, LESS, XHTML, HTML, HTML5, HTML5 Video, Smarty, TWIG, Yahoo! Widgets/Konfabulator, SWFobject, Freewheel, Conviva, and a working knowledge of Angular.js, D3, Dojo, PHP, C# and C++.</p>
-      <p>I am currently learning and have some experience with React and various tools in the React tech stack. I am also learning Vue.js</p>
-    </div>
-    <div id="recruiter">
-    <p>Hello as you probably guessed I'm Alexander Lefkowitz</p> 
-      <p>I'm a US Citizen, legally able to work, my DOB is 5/12/1986, check the other sections here for skills info regarding 
-      what languages and tech stacks I know for you to use when presenting me in more detail but in a nutshell I know:
-        <ul>
-          <li>JavaScript (10 years)</li>
-          <li>Object Oriented aspects of JavaScript (6 years)</li>
-          <li>jQuery (8 years)</li>
-          <li>JSON (8 years)</li>
-          <li>XML (8 years)</li>
-          <li>CSS (14 years)</li>
-          <li>SASS (5 years)</li>
-          <li>LESS (5 years)</li>
-          <li>XHTML (8 years)</li>
-          <li>HTML (14 years)</li>
-          <li class="bump"><em>React (4 months work experience)</em></li>
-          <li><em>Angular (1 month practice)</em></li>
-        </ul></p> 
-      
-
-      <p>Overall I've been a UI developer since 2006 if the framework has only been around for just a few (such as React).</p> 
-      <p>I am interested in UI, UX, UI architecture, and general UI development and engineering. HTML/CSS wireframes also works but might be under my pay grade.</p> 
-      <p>Since I live in the New York area I can readily work in New York City, Jersey City, NJ, Hoboken, and the immediate area that I can get to via train and bus. Remote work is also definitely a plus.</p> 
-      <p>I am willing to work elsewhere and even another country but this must be funded by the agency or company willing to hire me and must be provided prior to my travel, NO EXCEPTIONS!</p> 
-      <p>I have references but will not be giving their info out until I feel it's worth it.</p>
-
-      <p>I value my time and talk to recruiters all the time. Please be mindful. My phone is generally on me all day. If I gave all my info out to every recruiter that called me I'm sure I'd have my identity stolen by now. 
-        Over the years I've heard it all so to make it easier here is a list of things that will make me not want to answer your calls, call you back, turn down the job almost immediately, or might make me want to block you:
-        <ul>
-          <li>Leaving a message without an extension or number.</li>
-          <li>Send me the job description to my email.<br /> And immediately call me asking me if I read all 9 paragraphs.</li>
-          <li>Make me have to research to get back to you.</li>
-          <li>Calling me 2 times in a row while I'm currently on the phone,<br /> then 2 times again 5 minutes later.</li>
-          <li>Calling me 8 times back to back.</li>
-          <li>Calling me 8 times back to back, you deny it and when I email you back a <br />copy of my call log you blame apple for making a lying cellphone.</li>
-          <li>You send me a screenshot of your desktop in a pinch and I see XXX file names on the desktop.</li>
-          <li>Insist that Java and JavaScript are the same thing.</li>
-          <li>Tell me to just learn something and submit me without asking.</li>
-          <li>Be one of the 10 other recruiters that just are looking for a "JavaScript ninja"<br />and keep repeating that term.</li>
-          <li>Say anything even remotely sexist, it tells me alot about your organization.</li>
-          <li>Calling me 3 times because you found an "URGENT" requirement even though I haven't responded to the email.</li>
-        </ul>
-
-      <p>I expect no less then $40 an hour and usually work for $50 to $70 an hour depending on work and location</p> 
-      <p>DO NOT LIE OR MISREPRESENT ME TO CLIENTS, NO THIRD PARTIES, if I have reason to think you or your company is sketchy for any reason I will probably ignore or block you. I will not lie to an employer for you, I will not misrepresent myself to an employer, I will not exaggerate my skills. If you rely on any of these things or find it necessary for the employee to do this then please move on.</p>
-      <p>That said I would love to speak to you, double so if you are the actual employer. Feel free to give me a ring or text me.</p>
-    </div>
-    <div id="companies">
-        <p>Much of my experience has been through working with hands on projects for designers and project managers. The companies and organizations I have worked for include</p>
-        <ul>
-            <li>Gartner in Stamford, CT</li>
-            <li>ADP in Roseland, NJ</li>
-            <li>Droga5 in NYC, NY</li>
-            <li>All Things Media in Mahwah, NJ</li>
-            <li>CNBC in Englewood Cliffs, NJ</li>
-            <li>KM Newspaper in Monroe, NY</li>
-            <li>Yeshiva University in NYC, NY</li>
-            <li>National Parts Depot in Chester, NY</li>
-        </ul>
-        <br />
-        <p>I have worked with companies through my web hosting company Web Quest Hosting and as an independant contractor.</p>
-        </p>
-    </div>
-    <div id="resume">
-      <p>My resume is available in Microsoft Word format.<br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="AlexLefkowitz_UIDEV_resume.doc">Download</a></p>
-    </div>
-    <div id="hateMachine">
-        <h3>Captains Log - 10:55pm - Dec 5th 2017</h3>
-        <p><strong>Hello internet:</strong> I'm just gonna leave this here...
-        <img src="assets/images/webapp.jpg" /><br />
-        <img src="http://i.imgur.com/NSmFQgg.gif" alt="Who needs passwords when you have security questions?" />
-        </p>
-        <h3>Captains Log - 10:55pm - May 6th 2016</h3>
-        <p><strong>I don't like AngularJS 1 and neither should you:</strong> Who would have known that once I added what I would loosly call a "UI blog" to my site that an avalanche of things I want to point out to the internet would be greater then my internet patience.
-        </p>
-        <p>My first experience oddly enough comes from a public facing website, a rather large one I won't mention. While loading I saw {{ expressions in brackets }}. Now maybe I'm oldschool but wasn't the whole point in half the standards I work in now exist so that the user can access content on most devices and software? What if the user uses TOR and can't use JavaScript. I feel that AngularJS is a front-end framework for Java programmers for prototyping purposes.</p>
-        <br />
-        <img src="https://cdn.meme.am/instances/400x/64638845.jpg" />
-        <br />
-        <p>
-        Another problem I noticed, though I suppose less a problem and more the nature of UI work, is that many times important financial information is being processed on the front end instead of the backend. You should never use JavaScript in any way to handle such important information, only output and experience.
-        </p>
-        <p>If I wanted to make a virus I would hook my code straight into the injections and directives. Who knows what behind the scenes action is going on.</p>
-        <h3>Captains Log - 5:34pm - May 5th 2016</h3>
-      <p>What's it like being on the internet when your trade involves making websites? I would expect a car machanic to see random things that would go over my head as he drives around traffic, noticing different sounds, behaviors, and who knows what else when it comes to other cars and drivers. Personally my experience with cars involves filling up at the pump and writing "clean me" on the back of dirty SUV windows.</p>
-      <p>First thing that comes to mind is HOLY CRAP I wrote this site your reading right now back in 2008. The most recent code I added was the Did You Know? section on the bottom.</p>
-      <p>The second thing I noticed is... wow I got LUCKY deciding to stay with JavaScript and HTML5, although I started out with Flash... and I think Steve Jobs (rip) was too hard on Adobe, I'm glad the world values people who likes to tinker with style sheets and turn browsers into application containers.</p>
-      <img src="https://i.imgur.com/Z5o9aQ9.jpg" /><br />
-      <p>
-          But is that what the world wants? Oh JavaScript, you did right with the ECMA standard, but who the hell put Java as the first part of your name?
-      </p>
-      <img src="https://i.imgur.com/MilKmny.png" /><br /><br />Sigh....<br />
-      <img src="https://i3.kym-cdn.com/photos/images/newsfeed/000/228/791/632.gif" />
-    </div>
-    <div id="politics">
-      <p><img style="float:right;margin-left:10px" src="assets/trueReporting.jpg" />This is where I post my political ramblings, I'm glad you want to know where I stand on rare posts I write. I reposted all my posts from 2016 and will be putting back 2017 once I pull it from the old database. Thank you for all the interest though!</p>
-      <br>
-      <br clear="both">
-      
-      <h2>2016 in a tailspin</h2>
-      <h3><strong>10/10/2016 </strong>Is this a dream?</h3>
-      <p><img style="float:right" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Donald_Trump_swearing_in_ceremony.jpg/240px-Donald_Trump_swearing_in_ceremony.jpg" />On November 8th, 2016, the United States voted in Donald Trump as their 45th president, defeating Hillary Clinton.</p>
-      <p>In the aftermath, progressives are being told that this outcome is their fault. The finger is now on progressives for calling conservatives racists, bigots, sexist, etc. And that the only path forward is to now find common ground with conservatives.</p>
-      <p>As a centerist I cannot possibly object more vehemently to this. I may share some aspects with progressives but it's more complicated then that and this brings me to their hypocrisy and my next point:</p>
-      <h3>Social Justice Warriors and Snowflakes</h3>
-      <p>There is a serious problem right now on college campuses and from what I see a lot of the YouTube audience. People who have no strong political identity and like hearing quick easy catch-all answers. I loved hearing Ben Shapiro tell a student that "facts don't care about your feelings".</p>
-      <p><img style="float:right" src="assets/milo.jpg" />There is a growing regressive left that seeks to restrain and limit all speech and discourse they disapprove of. This often results in shouting down dialogue, discussion, and even comedy is now off-limits. This has the unintended side effect of legitamizing professional trolls like Milo Yiannopoulos.</p>
-      <p>Being 31 (as of writing this), I grew up during the moral panic around violent video games. You know, games like Street Fighter II and Mortal Kombat. I grew up with the over-zealous FCC looking to scrub the airwaves of any kind of profanity or nudity.</p>
-      <p>
-      I objected to this, and fought against this. I grew a deep appreciation of the first amendment right to freedom of speech.</p>
-      <p>
-      The social justice movement is moving us from classic liberalism to just another form of authoritarianism: seeking to control what people can and can't say.</p>
-      <p>It is truly dangerous and I am very much opposed to this.</p>
-      <h3>Bubble Trouble</h3>
-      <p>There is unquestionably a genuine threat in bubbles. The left foolishly thought they had this race taken care of. This is because they formed circles on social media and only followed the people that agreed with. Any nonconformists were instantly blocked. So obviously, to them, it appeared like an order that Clinton would win the race.<p>
-      <p>Bubbles are indeed very dangerous. We need to have real discussions with people we disagree with, if we ever hope to find common ground and unite as a people.</p>
-      <p>There are legitimate grievances on both sides. I am more than willing to engage in a discussion around inheritance tax, healthcare reform, social welfare, drug laws, the size of the military, the size of government, and even heavy-hitting issues like abortion. I understand that someone can disagree with me on these topics and not be wrong, and still have valid grievances.</p>
-      <h3>Trump (oy vey :/)</h3>
-      <p>But then there's Donald Trump. A candidate that ran his campaign on racism, misogyny, bigotry, xenophobia, lies and hatred. A candidate who sought to divide our nation in order to assure his victory.</p>
-      <p>We now have a president-elect who openly mocked the handicapped, who called Mexicans criminals and rapists, who called for jailing his political opponent, who encouraged another nation to hack and undermine our fair election process, who fat-shamed a female beauty contestant, who bragged about walking in on women in locker rooms, who boasted about how he could "grab women by the pussy" just because he was famous, who has stated that he would nominate Supreme Court justices to reverse marriage equality for gay and lesbian couples, who has promised to rescind all protections for transgender individuals — such as the right to use the bathroom that matches their gender, a man who has defrauded his own charity, who wanted to ban all Muslims from entering the country, and to create a registry for them. A candidate who has declared the greatest threat to the survival of our species — global warming — to be a Chinese hoax. Someone who chose Mike Pence as his running mate — a man who believes in using electro-shock therapy to "turn gay kids straight", and who passed a Jim Crow-era law to allow businesses to discriminate and deny service to gays and lesbians. A religious nut one step away from being a flat earther. A man who refused to accept the results of the election — if he lost, that is ... and claimed the election was rigged against him. A man who wants to allow the further proliferation of nuclear weapons.</p>
-      <p>This candidate is unlike any other candidate that has run in my entire lifetime. He is irredeemably deplorable. Which is perhaps why Ku Klux Klan has endorsed him and held celebrations upon his victory.</p>
-      <h3>Clinton</h3>
-      <p>Hillary Clinton was a terrible candidate. She colluded with the DNC to steal the primary from Bernie Sanders, which certainly cost us the election. She is a typical career politician, traveling around the country and giving $200,000 speeches to Wall Street executives. Talking about how she has two faces, one for the general public, another for the business elite.</p>
-      <p>She is not a progressive. She would easily be considered a conservative in the '80s before the Republican party went batshit insane. Today, compared to the rest of the world, she is a center right candidate. She has been late on every socially progressive issue. Only coming around on marriage equality in 2013, after more than half the country approved of them, and the vast majority of her own party.</p>
-      <p>I do not like Clinton. I did not want another family dynasty in the White House.
-      But she did at least spend her life working to help the poor and minorities to better their lives. Their charitable foundation has done a lot of good in the world.</p>
-      <p>Yet with all of her flaws — private e-mail server included — she was still the lesser of two evils by an enormous margin in this election.</p>
-    </div>
-    <div id="humor">
-
-      <p><strong>I write funny things for local articles and some literature I write on the side. Here's a few ramblings people tell me I should post.</strong>
-      </p>
-      <ul>
-        <li>Don't think outside the box. .. Think WITH the box. (What?)</li>
-        <li>Save money on doors by getting rid of the walls.</li>
-        <li>Every kiss begins with genocide in Africa (Damn it! A political statement was thought of)</li>
-        <li>Note to self... Nothing to note.</li>
-        <li>Sometimes I wonder if people realize how painfully different they are. Followed by realizing I'm probably painfully not unique myself. Maybe that's a good thing? I'm not a fan of attention.</li>
-        <li>Living like you don't have much time to live is like saying live every day like you were bitten by a rabid dog and you're gonna die of rabies. How does that person live? Well probably not very well...</li>
-        <li>Hello I am language. English to be exact. Ok bye.</li>
-        <li>Rice. The Dinner Cereal!</li>
-        <li>Adding "for men" makes a lot of things more interesting or confusing. What the hell is "flowers for men"?</li>
-        <li>Things that must be had 100%.... When having a baby you have to have the whole baby... Oh god even 99% of one sounds disturbing. And 101%?</li>
-        <li>Just noticed the earth is mostly flooded. What if the Earth is already kinda screwed and we're just used to living in between floods?</li>
-        <li>You can't laugh in space. it is impossible because nothing is funny in space.</li>
-        <li>If you never get sick, it could be a sign of a rare disease...</li>
-        <li>Thinking of a new pickup line: you know what materiel this is? (Grab shirt)...boyfriend material.</li>
-        <li>accidentally consented to destroying the universe</li>
-        <li>jail is a great place to meet other people interested in crime</li>
-        <li>I spent my quarter on righteous living</li>
-        <li>If somebody doesn't like themselves, they have no right reproducing, why make another person that may not like themselves</li>
-      </ul>
-      <p>Click near the bottom of this website for more.</p>
-    </div>
-
-    <div id="frontend">
-      <img src="assets/images/yeshiva.jpg" width="200" height="200" alt="TU" /><img src="assets/images/royaltone.jpg" width="200" height="200" alt="RT" />
-      <p>I have worked for CNBC, All Things Media, Yeshiva Univercity, National Parts Depot, Droga5, and various agencies.</p>
-      <p>My particular niche is single page web applications, the majority of the UI work I have done involves my competency in HTML(5), CSS, JavaScript, jQuery, SASS, LESS, JSON, XML, Photoshop, and various other smaller text, font, and debugger tools. 
-      </p>
-      <ul>
-        <li><a href="http://www.bringyourchallenges.com/" title="Bring Your Challenges">Bring Your Challenges (interactions, mobile, SEO, some behind the scenes work)</a></li>
-        <li><a title="CompTia Ebook">CompTia Ebook platform (offline for legal reasons)</a></li>
-        <li><a title="Pearson fctuts">Pearson MyFinanceLab Financial Calculator Tutorials (JS and mobile work, some video work)</a></li>
-        <li><a title="Positioner JSON Tool">JSON Generator / Database creater for car parts diagrams (offline for legal reasons)</a></li>
-        <li><a href="https://thawing-oasis-48544.herokuapp.com/" title="Anagh">Anagh Tech Site design prototype</a></li>
-        <li><a href="http://qa.assetlibrary.cnbc.com/library/web/modules.php" title="CNBC QA">Various CNBC modules, scripts, and sliders (outdated)</a></li>
-        <li><a href="/brocair/" title="Brocair">Brocair (OLD)</a></li><li><a href="https://lit-tundra-99349.herokuapp.com/" title="Munno's Deli">Munno's Deli (VERY OLD)</a></li>
-      </ul>
-    </div>
-    <div id="backend"><img src="assets/images/tnpp.gif" width="200" height="200" alt="tnpp" />
-      <p>My backend works includes work done in ASP, ASP.NET/C#, javascript and some SQL.</p>
-      <p>I have worked for Domestic Securities, National Parts Depot, and have consulted for various clients. Most of my work has been for internal applications and kiosks.</p>
-      <p>A fine online example of my work can be found at National Parts Depot TNPP website.</p>
-      <ul>
-        <li><a href="http://www.nationalparts.com/tnpp/tnppinv.aspx" target="_blank">http://www.nationalparts.com/tnpp/tnppinv.aspx (might be down, it's their database)</a></li>
-      </ul>
-    </div>
-    <div id="flash">
-      <p>I have worked on many Flash projects in the past.<br>I'm currently working on a new project called Brimstone<br><img src="assets/images/brim1.jpg" class="Brim1"/></p>
-      <ul>
-        <li>Universal  War: Lost Civilization (has over 2.5 million downloads)</li>
-      </ul>
-      <p><a href="/web/20110519005000/http://www.newgrounds.com/portal/view/87004">http://www.newgrounds.com/portal/view/87004</a></p>
-      <ul>
-        <li>3D  Pong</li>
-      </ul>
-      <p><a href="/web/20110519005000/http://www.newgrounds.com/portal/view/260014">http://www.newgrounds.com/portal/view/260014</a></p>
-      <ul>
-        <li>Retronoid  FS</li>
-      </ul>
-      <p><a href="/web/20110519005000/http://www.newgrounds.com/portal/view/236072">http://www.newgrounds.com/portal/view/236072</a></p>
-<p>Most of these are available on Newgrounds but have also been featured on many other popular Flash game web pages such as:</p><ul>
-       <li>freeworldgroup.com</li>
-        <li>addictinggames.com</li>
-        <li>newsandentertainment.com</li>
-        <li>smashingames.com</li>
-        <li>2flashgames.com</li>
-        <li>2dplay.com</li>
-        <li>agame.com</li>
-        <li>flasharcade.com</li>
-        <li>funnycrazygames.com</li>
-        <li>coolgames.com</li>
-        <li>blitzgamer.com</li>
-        <li>arcadehaven.net</li>
-        </ul>
-    </div>
-    <br clear="all"  />
-  </div>
-</div>
-  
-
-
-
-  
-</div><div class="bottom">
-
-<div id="didYou">
-                <ul>
-                    <li class="show">Here's some random thoughts I've had while coding and answers to interview questions.<br>(not important but click here toggle through them.)</li>
-                    <li>Spiders have 8 feet or in Europe 2.43 meters.</li>
-                    <li>We can create an atmosphere on Mars by simply dimming the lights and playing some smooth jazz.</li>
-                    <li>I think that instead of blocking people who use adblock, site's should just show all content in Comic Sans in all it's glory.</li>
-                    <li>If I'm at work early, either I was asked to come in early, I have a deadline, or my dog woke me up earlier then usual.</li>
-                    <li>I think everybody deserves a theme song, I just don't think anybody should choose their own.</li>
-                    <li>Believe it or not you CAN have too many frameworks...</li>
-                    <li>I know at LEAST 5 Chuck Norris jokes.</li>
-                    <li>I'm a great tipper. 20% AFTER the tax!</li>
-                    <li>I once lived in NJ and worked in NY followed by working in NJ and living in NY</li>
-                    <li>I once had a dream involving cross browser issues and IE6 :(</li>
-                    <li>I started JavaScript because I was good at ActionScript 1.0 while making Flash Games.</li>
-                    <li>My hobbies includes Law & Order trivia, coding interesting things, and retro video games.</li>
-                    <li>One day I hope to program an NES game/ROM</li>
-                    <li>I didn't think the Seinfeld final episode was that bad.</li>
-                    <li>Sometimes going to work feels like taking a break from life.</li>
-                    <li>Nobody can beat me in Mortal Kombat 3. Trust me many have tried.</li>
-                    <li>I come from a family of number people, I trained my younger brother to code, my older brother codes, my dad is an accountant and investment manager, and my mom owns her own store.</li>
-                    <li>I find it odd that our eyes are actually in the MIDDLE of our faces and not near the top.</li>
-                    <li>Watch out! I'm about to use an unsupported blink tag!</li>
-                    <li>Nah, just kidding. I'm not evil.</li>
-                    <li>Am I the only web developer that likes the anime Dragonball? BTW I like the anime Dragonball.</li>
-                    <li>I've spent more time playing Doom then I care to admit.</li>
-                    <li>Nothing beats dubstep or some good techno while coding.</li>
-                    <li>Nothing beats rock when I'm done coding.</li>
-                    <li>(a pot of strong coffee doesn't hurt either)</li>
-                    <li>I think the Metroid franchise has the best music of any video game.</li>
-                    <li>I really like C#, I need to sink my teeth into it more.</li>
-                    <li>Why was the JavaScript developer sad?... Because he didn’t Node how to Express himself. (Drum Drum Cymble!)</li>
-                    <li>How much wind will a wind mill mill if a windmill will mill wind?</li>
-                    <li>I think if bigfoot existed the ultimate time tested weapon to keep it away from you would be a camera.</li>
-                    <li>I wasn't good at Dojo so I had to pick myself up by my Bootstraps and....  Learn more Dojo? Ok I'm out of JavaScript jokes.</li>
-                    
-                </ul>
+    <div class="top">
+        <div class="contact"><a href="mailto:aml51z@outlook.com">aml51z&#64;outlook.com</a>
+            Phone: (845) 464 - 8776<br><span class="recruiter">(If you're a recruiter, email me first. Do not call me if I don't <br>reply immediately. <a
+                    href="#recruiter" class="recruiterHref"> And please click here.</a>)</span>
+            <a href="https://www.linkedin.com/in/alexlefkowitz">LinkedIn</a></div>
+        <div class="topText">
+            <div class="name">
+                <div class="alex">Alexander</div>
+                <div class="lefkowitz">Lefkowitz<br/>
                 </div>
+            </div>
+            <div class="programmer">/*UI Developer*/</div>
+        </div>
+    </div>
+    <div class="leftSection">
+        <div id="special" class="section"></div>
+        <div id="specialInfo" class="subInfo">
+            <a href="#memorial" class="memorialHref">In Memoriam</a>
+            <a href="#portfolio" class="portfolioHref">Portfolio / Legacy</a>
+        </div>
+        <br />
+        <div id="about" class="section">Technical Work</div>
+        <div id="aboutInfo" class="subInfo">
+            <a href="#skills" class="educationHref">Education and Skills</a>
+            <a href="#companies" class="companyHref">Companies I've worked for</a>
+            <a href="#resume" class="resumeHref">Resume</a>
+            <a href="#recruiter" class="recruiterHref">Are you a recruiter?</a>
+            <a href="#statement" class="personalHref">Personal Statement</a>
+        </div>
+        <div id="example" class="section">Samples</div>
+        <div id="exampleInfo" class="subInfo">
+            <a href="#frontend" class="frontHref">Front end development</a>
+            <a href="#backend" class="backHref">Back end development</a>
+            <a href="#flash" class="flashHref">Flash</a></div>
 
-Created with Photoshop, Notepad, Sublime and about four cups of coffee. // Alexander Lefkowitz // 2011 - 2017</div>
+        <div id="personal" class="section">Personal</div>
+        <div id="personalInfo" class="subInfo">
+            <a href="#politics" class="politicsHref">Politics!</a>
+            <a href="#humor" class="humorHref">Rambling oh my!</a>
+            <a href="#hateMachine" class="boredHref">Internet Hate machine<br>BLOG!</a>
+            <br/></div>
+    </div>
+    <div class="rightSection">
+        <div class="fill">
+            <div class="round">
+                <div class="tl"></div>
+                <div class="t"></div>
+                <div class="tr"></div>
+                <div class="l"></div>
+                <div class="r"></div>
+                <div class="bl"></div>
+                <div class="b"></div>
+                <div class="br"></div>
+                <div class="back"></div>
+            </div>
+        </div>
+        <div id="dynaFill">
+            <!--insert sections here-->
+            <div id="sectionName"></div>
+            <div id="memorial">
+                <img src="assets/images/31490315_10157348216774746_6525017704535949312_n.jpg" class="latest_photo" />
+                <p class="text-center memorium_name">Alexander Montana Lefkowitz</p>
+                <p class="text-center memorium_date">1986 - 2018</p>
+                <hr />
+                <span class="memorium_writeup">
+                    <img src="assets/images/alex_01.png" style="width: 150px; float: left; margin-right: 15px; border-radius: 15px;" alt="Professional Alex" title="Professional Alex" >
+                    Alex "aml51z" Lefkowitz passed away on July 22nd, 2018. He was best known around the internet for creating Flash games, his first and arguably most well known was Raging Flight, a sci-fi shooting game inspired by Combat Instinct.<br />
+                    <br />
+                    He achieved some infamy with his later penchant for doing games in a shock-jock style vein, these include Sniper's Revenge and Tsunami Lootup, both respectively exploiting the media frenzy around the 2002 DC sniper attacks and 2004 Indian ocean tsunami.<br />
+                    <br />
+                    Uniwar: Lost Civilization would be his last big game before disappearing from the limelight. It was something of a return to form: a sci-fi themed shooting game created together with long time friend Brian Fox (Doomhammr).<br />
+                    <br />
+                    <img src="assets/images/_29811_10151466846134746_730864137_n.png" style="width: 200px; float: right; margin-left: 15px; border-radius: 15px;" alt="Alex Pretending to be Spiderman" title="Alex Pretending to be Spiderman" >
+                    Several other lesser known games include retronoid, an arkanoid clone, and 3D pong. The last game that he's known to have made was called Brimstone.<br />
+                    <br />
+                    Alex was a complex character who often presented himself as an overconfident contrarian online, but those who spent any meaningful time with him knew him as he was: just another guy who always tried to do the right thing.<br />
+                    <br />
+                    This is an archive of all his known work that was able to be saved. Brimstone is currently missing from this archive, as well as an early version of Raging Flight 2 that was circulated around the flashstyle.net community. If you have copies of these, then please share them!<br />
+                    <br />
+                    The Adobe Flash Player is required to play the games.<br />
+                    <br />
+                    It saddens us to see you go so soon, Alex, but from all of us: we hope that you rest well.<br />
+                    <br />
+                    Good Night.<br />
+                    <br />
+                    <div style="text-align: center; display: block; margin: 0 auto;">
+                        <img src="assets/images/554015_10151454681179746_702429192_n.jpg" style="height: 250px; margin: 15px; display: inline-block; border-radius: 15px;" title="Alex with his Mom" >
+                        <img src="assets/images/412491_3663299866315_42446269_o.jpg" style="height: 250px; margin: 15px; display: inline-block; border-radius: 15px;" title="Alex (right) with brothers Andrew and Jonathan" >
+                    </div>
+                </span>
+            </div>
+            <div id="portfolio">
+                <p>Below is a collection of Alex's previous Flash projects, lovingly scraped from the furthest corners of the internet and preserved here as if it were the finest of wines.<br />
+                <br />
+                You will need the flash player to play these games or watch these.<br />
+                <br />
+                For Alex's web work, click <a href="#frontend" class="frontHref">here for Front End (Design)</a> and <a href="#backend" class="backHref">here for Back End (Server Side / Programming)</a> </p>
+                <br />
+                <br />
+                <a href="#sniper">Snipers Revenge</a>
+                <a href="#iraq">American Operation: War on Iraq</a>
+                <a href="#raging">Raging Flight</a>
+                <a href="#skimmer">Space Skimmer</a>
+                <a href="#derby">Niggzwheelz Offroad Derby</a>
+                <a href="#uniwar">UWLC Flash 8 Tech Demo</a>
+                <a href="#pong">3D Pong</a>
+                <a href="#retronoid">Retronoid FS</a>
+                <a href="#cheeto">Killer Cheeto</a>
+                <a href="#tsunami">Tsunami Loot-up</a>
+                <hr />
+                <br />
+
+                <a name="sniper"></a>
+                <h2>Snipers Revenge (10/27/2002)</h2>
+                <embed src="assets/portfolio/snipersrevenge_original.swf" width="680" height="400">
+                <br /><br />
+
+                <a name="iraq"></a>
+                <h2>American Operation: War on Iraq (05/22/2003)</h2>
+                <embed src="assets/portfolio/99317_iraqif.swf" width="680" height="400">
+                <br /><br />
+
+                <a name="raging"></a>
+                <h2>Raging Flight (07/07/2001)</h2>
+                <embed src="assets/portfolio/raging%20flight.swf" width="680" height="500">
+                <br /><br />
+
+                <a name="skimmer"></a>
+                <h2>Space Skimmer (03/20/2002)</h2>
+                <embed src="assets/portfolio/48053_skimmer.swf" width="680" height="400">
+                <br /><br />
+
+                <a name="derby"></a>
+                <h2>Niggzwheelz Offroad Derby (03/15/2004)</h2>
+                <embed src="assets/portfolio/155486_niggz.swf" width="680" height="400">
+                <br /><br />
+
+                <a name="uniwar"></a>
+                <h2>UWLC Flash 8 Tech Demo (10/04/2005)</h2>
+                <embed src="assets/portfolio/uniwar.swf" width="680" height="400">
+                <br /><br />
+
+                <a name="pong"></a>
+                <h2>3D Pong (08/17/2005)</h2>
+                <embed src="assets/portfolio/FWG3dPong.swf" width="680" height="400">
+                <br /><br />
+
+                <a name="retronoid"></a>
+                <h2>Retronoid FS (05/08/2005)</h2>
+                <embed src="assets/portfolio/retronoid.swf" width="680" height="400">
+                <br /><br />
+
+                <a name="cheeto"></a>
+                <h2>Killer Cheeto (04/11/2004)</h2>
+                <embed src="assets/portfolio/161307_cheeto.swf" width="680" height="400">
+                <br /><br />
+
+                <a name="tsunami"></a>
+                <h2>Tsunami Loot-up (01/08/2005)</h2>
+                <embed src="assets/portfolio/tsunami_lootup_original.swf" width="680" height="400">
+                <br /><br />
+
+                <!--
+                <h2>Gun Point (07/03/2001)</h2>
+                <embed src="assets/portfolio/23352_killingpete.swf" width="680" height="500">
+                <br /><br />
+                -->
+
+            </div>
+            <div id="statement">
+                <img src="assets/images/myself.jpg" class="myself"/>
+                <p>Hello everybody, my name is Alexander Lefkowitz, this webpage is more or less a
+                    blog/portfolio/insight type page I created for anything me related. I started it in 2005 and over
+                    time have have settled on what you see here which I hope gives you an idea of who I am, my
+                    personality, and my UI developer career.</p>
+                <p>I’m a programmer, analyst, and developer. It’s my passion; it’s my means of art and expression. Web
+                    programming is more than a tool; to me it’s how an idea turns into reality.</p>
+                <p>Whether on my own or in collaboration my goal is to make something that exceeds expectations.</p>
+                <br><img src="assets/images/badges.png" class="badge"/>
+                <p>I'm a web game developer currently sinking my teeth into mobile game developement!</p>
+                <p>And finally I'm a humor writer. Involved in various unrelated writing endeavours.</p>
+                <p>
+                    <img src="assets/images/brim2.jpg" class="Brim2"/>
+                    <br>Please Check out my front end samples.<br><br>
+                    Note: This site was coded back in 2012 so although not terrible is very simple and uses no advances
+                    frameworks other then a little jQuery for some quick fade effects that work on all browsers.</p>
+            </div>
+            <div id="skills">
+                <p>After graduating High School I went to many technical institutes for computers, CTECH for Principals
+                    of Technology, C++ and Javascript, NETCOM in Manhattan for C++, C#.NET, and Network+. I have also
+                    attended Rockland Community College for networking and programming.</p>
+                <p>I have also worked in IT departments for many different companies and have acquired 9+ years of
+                    industry and hands on experience.</p>
+                <p>I have learned and used a variety of different computer programming and scripting languages.</p>
+                <p>As of now I know:<br/>
+                    Object Oriented Javascript, jQuery, JSON, XML, CSS2, CSS3, SASS, LESS, XHTML, HTML, HTML5, HTML5
+                    Video, Smarty, TWIG, Yahoo! Widgets/Konfabulator, SWFobject, Freewheel, Conviva, and a working
+                    knowledge of Angular.js, D3, Dojo, PHP, C# and C++.</p>
+                <p>I am currently learning and have some experience with React and various tools in the React tech
+                    stack. I am also learning Vue.js</p>
+            </div>
+            <div id="recruiter">
+                <p>Hello as you probably guessed I'm Alexander Lefkowitz</p>
+                <p>I'm a US Citizen, legally able to work, my DOB is 5/12/1986, check the other sections here for skills
+                    info regarding
+                    what languages and tech stacks I know for you to use when presenting me in more detail but in a
+                    nutshell I know:
+                <ul>
+                    <li>JavaScript (10 years)</li>
+                    <li>Object Oriented aspects of JavaScript (6 years)</li>
+                    <li>jQuery (8 years)</li>
+                    <li>JSON (8 years)</li>
+                    <li>XML (8 years)</li>
+                    <li>CSS (14 years)</li>
+                    <li>SASS (5 years)</li>
+                    <li>LESS (5 years)</li>
+                    <li>XHTML (8 years)</li>
+                    <li>HTML (14 years)</li>
+                    <li class="bump"><em>React (4 months work experience)</em></li>
+                    <li><em>Angular (1 month practice)</em></li>
+                </ul>
+                </p>
+
+
+                <p>Overall I've been a UI developer since 2006 if the framework has only been around for just a few
+                    (such as React).</p>
+                <p>I am interested in UI, UX, UI architecture, and general UI development and engineering. HTML/CSS
+                    wireframes also works but might be under my pay grade.</p>
+                <p>Since I live in the New York area I can readily work in New York City, Jersey City, NJ, Hoboken, and
+                    the immediate area that I can get to via train and bus. Remote work is also definitely a plus.</p>
+                <p>I am willing to work elsewhere and even another country but this must be funded by the agency or
+                    company willing to hire me and must be provided prior to my travel, NO EXCEPTIONS!</p>
+                <p>I have references but will not be giving their info out until I feel it's worth it.</p>
+
+                <p>I value my time and talk to recruiters all the time. Please be mindful. My phone is generally on me
+                    all day. If I gave all my info out to every recruiter that called me I'm sure I'd have my identity
+                    stolen by now.
+                    Over the years I've heard it all so to make it easier here is a list of things that will make me not
+                    want to answer your calls, call you back, turn down the job almost immediately, or might make me
+                    want to block you:
+                <ul>
+                    <li>Leaving a message without an extension or number.</li>
+                    <li>Send me the job description to my email.<br/> And immediately call me asking me if I read all 9
+                        paragraphs.
+                    </li>
+                    <li>Make me have to research to get back to you.</li>
+                    <li>Calling me 2 times in a row while I'm currently on the phone,<br/> then 2 times again 5 minutes
+                        later.
+                    </li>
+                    <li>Calling me 8 times back to back.</li>
+                    <li>Calling me 8 times back to back, you deny it and when I email you back a <br/>copy of my call
+                        log you blame apple for making a lying cellphone.
+                    </li>
+                    <li>You send me a screenshot of your desktop in a pinch and I see XXX file names on the desktop.
+                    </li>
+                    <li>Insist that Java and JavaScript are the same thing.</li>
+                    <li>Tell me to just learn something and submit me without asking.</li>
+                    <li>Be one of the 10 other recruiters that just are looking for a "JavaScript ninja"<br/>and keep
+                        repeating that term.
+                    </li>
+                    <li>Say anything even remotely sexist, it tells me alot about your organization.</li>
+                    <li>Calling me 3 times because you found an "URGENT" requirement even though I haven't responded to
+                        the email.
+                    </li>
+                </ul>
+
+                <p>I expect no less then $40 an hour and usually work for $50 to $70 an hour depending on work and
+                    location</p>
+                <p>DO NOT LIE OR MISREPRESENT ME TO CLIENTS, NO THIRD PARTIES, if I have reason to think you or your
+                    company is sketchy for any reason I will probably ignore or block you. I will not lie to an employer
+                    for you, I will not misrepresent myself to an employer, I will not exaggerate my skills. If you rely
+                    on any of these things or find it necessary for the employee to do this then please move on.</p>
+                <p>That said I would love to speak to you, double so if you are the actual employer. Feel free to give
+                    me a ring or text me.</p>
+            </div>
+            <div id="companies">
+                <p>Much of my experience has been through working with hands on projects for designers and project
+                    managers. The companies and organizations I have worked for include</p>
+                <ul>
+                    <li>Gartner in Stamford, CT</li>
+                    <li>ADP in Roseland, NJ</li>
+                    <li>Droga5 in NYC, NY</li>
+                    <li>All Things Media in Mahwah, NJ</li>
+                    <li>CNBC in Englewood Cliffs, NJ</li>
+                    <li>KM Newspaper in Monroe, NY</li>
+                    <li>Yeshiva University in NYC, NY</li>
+                    <li>National Parts Depot in Chester, NY</li>
+                </ul>
+                <br/>
+                <p>I have worked with companies through my web hosting company Web Quest Hosting and as an independant
+                    contractor.</p>
+                </p>
+            </div>
+            <div id="resume">
+                <p>My resume is available in Microsoft Word format.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="AlexLefkowitz_UIDEV_resume.doc">Download</a></p>
+            </div>
+            <div id="hateMachine">
+                <h3>Captains Log - 10:55pm - Dec 5th 2017</h3>
+                <p><strong>Hello internet:</strong> I'm just gonna leave this here...
+                    <img src="assets/images/webapp.jpg"/><br/>
+                    <img src="http://i.imgur.com/NSmFQgg.gif"
+                         alt="Who needs passwords when you have security questions?"/>
+                </p>
+                <h3>Captains Log - 10:55pm - May 6th 2016</h3>
+                <p><strong>I don't like AngularJS 1 and neither should you:</strong> Who would have known that once I
+                    added what I would loosly call a "UI blog" to my site that an avalanche of things I want to point
+                    out to the internet would be greater then my internet patience.
+                </p>
+                <p>My first experience oddly enough comes from a public facing website, a rather large one I won't
+                    mention. While loading I saw {{ expressions in brackets }}. Now maybe I'm oldschool but wasn't the
+                    whole point in half the standards I work in now exist so that the user can access content on most
+                    devices and software? What if the user uses TOR and can't use JavaScript. I feel that AngularJS is a
+                    front-end framework for Java programmers for prototyping purposes.</p>
+                <br/>
+                <img src="https://cdn.meme.am/instances/400x/64638845.jpg"/>
+                <br/>
+                <p>
+                    Another problem I noticed, though I suppose less a problem and more the nature of UI work, is that
+                    many times important financial information is being processed on the front end instead of the
+                    backend. You should never use JavaScript in any way to handle such important information, only
+                    output and experience.
+                </p>
+                <p>If I wanted to make a virus I would hook my code straight into the injections and directives. Who
+                    knows what behind the scenes action is going on.</p>
+                <h3>Captains Log - 5:34pm - May 5th 2016</h3>
+                <p>What's it like being on the internet when your trade involves making websites? I would expect a car
+                    machanic to see random things that would go over my head as he drives around traffic, noticing
+                    different sounds, behaviors, and who knows what else when it comes to other cars and drivers.
+                    Personally my experience with cars involves filling up at the pump and writing "clean me" on the
+                    back of dirty SUV windows.</p>
+                <p>First thing that comes to mind is HOLY CRAP I wrote this site your reading right now back in 2008.
+                    The most recent code I added was the Did You Know? section on the bottom.</p>
+                <p>The second thing I noticed is... wow I got LUCKY deciding to stay with JavaScript and HTML5, although
+                    I started out with Flash... and I think Steve Jobs (rip) was too hard on Adobe, I'm glad the world
+                    values people who likes to tinker with style sheets and turn browsers into application
+                    containers.</p>
+                <img src="https://i.imgur.com/Z5o9aQ9.jpg"/><br/>
+                <p>
+                    But is that what the world wants? Oh JavaScript, you did right with the ECMA standard, but who the
+                    hell put Java as the first part of your name?
+                </p>
+                <img src="https://i.imgur.com/MilKmny.png"/><br/><br/>Sigh....<br/>
+                <img src="https://i3.kym-cdn.com/photos/images/newsfeed/000/228/791/632.gif"/>
+            </div>
+            <div id="politics">
+                <p><img style="float:right;margin-left:10px" src="assets/trueReporting.jpg"/>This is where I post my
+                    political ramblings, I'm glad you want to know where I stand on rare posts I write. I reposted all
+                    my posts from 2016 and will be putting back 2017 once I pull it from the old database. Thank you for
+                    all the interest though!</p>
+                <br>
+                <br clear="both">
+
+                <h2>2016 in a tailspin</h2>
+                <h3><strong>10/10/2016 </strong>Is this a dream?</h3>
+                <p><img style="float:right"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Donald_Trump_swearing_in_ceremony.jpg/240px-Donald_Trump_swearing_in_ceremony.jpg"/>On
+                    November 8th, 2016, the United States voted in Donald Trump as their 45th president, defeating
+                    Hillary Clinton.</p>
+                <p>In the aftermath, progressives are being told that this outcome is their fault. The finger is now on
+                    progressives for calling conservatives racists, bigots, sexist, etc. And that the only path forward
+                    is to now find common ground with conservatives.</p>
+                <p>As a centerist I cannot possibly object more vehemently to this. I may share some aspects with
+                    progressives but it's more complicated then that and this brings me to their hypocrisy and my next
+                    point:</p>
+                <h3>Social Justice Warriors and Snowflakes</h3>
+                <p>There is a serious problem right now on college campuses and from what I see a lot of the YouTube
+                    audience. People who have no strong political identity and like hearing quick easy catch-all
+                    answers. I loved hearing Ben Shapiro tell a student that "facts don't care about your feelings".</p>
+                <p><img style="float:right" src="assets/milo.jpg"/>There is a growing regressive left that seeks to
+                    restrain and limit all speech and discourse they disapprove of. This often results in shouting down
+                    dialogue, discussion, and even comedy is now off-limits. This has the unintended side effect of
+                    legitamizing professional trolls like Milo Yiannopoulos.</p>
+                <p>Being 31 (as of writing this), I grew up during the moral panic around violent video games. You know,
+                    games like Street Fighter II and Mortal Kombat. I grew up with the over-zealous FCC looking to scrub
+                    the airwaves of any kind of profanity or nudity.</p>
+                <p>
+                    I objected to this, and fought against this. I grew a deep appreciation of the first amendment right
+                    to freedom of speech.</p>
+                <p>
+                    The social justice movement is moving us from classic liberalism to just another form of
+                    authoritarianism: seeking to control what people can and can't say.</p>
+                <p>It is truly dangerous and I am very much opposed to this.</p>
+                <h3>Bubble Trouble</h3>
+                <p>There is unquestionably a genuine threat in bubbles. The left foolishly thought they had this race
+                    taken care of. This is because they formed circles on social media and only followed the people that
+                    agreed with. Any nonconformists were instantly blocked. So obviously, to them, it appeared like an
+                    order that Clinton would win the race.
+                <p>
+                <p>Bubbles are indeed very dangerous. We need to have real discussions with people we disagree with, if
+                    we ever hope to find common ground and unite as a people.</p>
+                <p>There are legitimate grievances on both sides. I am more than willing to engage in a discussion
+                    around inheritance tax, healthcare reform, social welfare, drug laws, the size of the military, the
+                    size of government, and even heavy-hitting issues like abortion. I understand that someone can
+                    disagree with me on these topics and not be wrong, and still have valid grievances.</p>
+                <h3>Trump (oy vey :/)</h3>
+                <p>But then there's Donald Trump. A candidate that ran his campaign on racism, misogyny, bigotry,
+                    xenophobia, lies and hatred. A candidate who sought to divide our nation in order to assure his
+                    victory.</p>
+                <p>We now have a president-elect who openly mocked the handicapped, who called Mexicans criminals and
+                    rapists, who called for jailing his political opponent, who encouraged another nation to hack and
+                    undermine our fair election process, who fat-shamed a female beauty contestant, who bragged about
+                    walking in on women in locker rooms, who boasted about how he could "grab women by the pussy" just
+                    because he was famous, who has stated that he would nominate Supreme Court justices to reverse
+                    marriage equality for gay and lesbian couples, who has promised to rescind all protections for
+                    transgender individuals — such as the right to use the bathroom that matches their gender, a man who
+                    has defrauded his own charity, who wanted to ban all Muslims from entering the country, and to
+                    create a registry for them. A candidate who has declared the greatest threat to the survival of our
+                    species — global warming — to be a Chinese hoax. Someone who chose Mike Pence as his running mate —
+                    a man who believes in using electro-shock therapy to "turn gay kids straight", and who passed a Jim
+                    Crow-era law to allow businesses to discriminate and deny service to gays and lesbians. A religious
+                    nut one step away from being a flat earther. A man who refused to accept the results of the election
+                    — if he lost, that is ... and claimed the election was rigged against him. A man who wants to allow
+                    the further proliferation of nuclear weapons.</p>
+                <p>This candidate is unlike any other candidate that has run in my entire lifetime. He is irredeemably
+                    deplorable. Which is perhaps why Ku Klux Klan has endorsed him and held celebrations upon his
+                    victory.</p>
+                <h3>Clinton</h3>
+                <p>Hillary Clinton was a terrible candidate. She colluded with the DNC to steal the primary from Bernie
+                    Sanders, which certainly cost us the election. She is a typical career politician, traveling around
+                    the country and giving $200,000 speeches to Wall Street executives. Talking about how she has two
+                    faces, one for the general public, another for the business elite.</p>
+                <p>She is not a progressive. She would easily be considered a conservative in the '80s before the
+                    Republican party went batshit insane. Today, compared to the rest of the world, she is a center
+                    right candidate. She has been late on every socially progressive issue. Only coming around on
+                    marriage equality in 2013, after more than half the country approved of them, and the vast majority
+                    of her own party.</p>
+                <p>I do not like Clinton. I did not want another family dynasty in the White House.
+                    But she did at least spend her life working to help the poor and minorities to better their lives.
+                    Their charitable foundation has done a lot of good in the world.</p>
+                <p>Yet with all of her flaws — private e-mail server included — she was still the lesser of two evils by
+                    an enormous margin in this election.</p>
+            </div>
+            <div id="humor">
+
+                <p><strong>I write funny things for local articles and some literature I write on the side. Here's a few
+                    ramblings people tell me I should post.</strong>
+                </p>
+                <ul>
+                    <li>Don't think outside the box. .. Think WITH the box. (What?)</li>
+                    <li>Save money on doors by getting rid of the walls.</li>
+                    <li>Every kiss begins with genocide in Africa (Damn it! A political statement was thought of)</li>
+                    <li>Note to self... Nothing to note.</li>
+                    <li>Sometimes I wonder if people realize how painfully different they are. Followed by realizing I'm
+                        probably painfully not unique myself. Maybe that's a good thing? I'm not a fan of attention.
+                    </li>
+                    <li>Living like you don't have much time to live is like saying live every day like you were bitten
+                        by a rabid dog and you're gonna die of rabies. How does that person live? Well probably not very
+                        well...
+                    </li>
+                    <li>Hello I am language. English to be exact. Ok bye.</li>
+                    <li>Rice. The Dinner Cereal!</li>
+                    <li>Adding "for men" makes a lot of things more interesting or confusing. What the hell is "flowers
+                        for men"?
+                    </li>
+                    <li>Things that must be had 100%.... When having a baby you have to have the whole baby... Oh god
+                        even 99% of one sounds disturbing. And 101%?
+                    </li>
+                    <li>Just noticed the earth is mostly flooded. What if the Earth is already kinda screwed and we're
+                        just used to living in between floods?
+                    </li>
+                    <li>You can't laugh in space. it is impossible because nothing is funny in space.</li>
+                    <li>If you never get sick, it could be a sign of a rare disease...</li>
+                    <li>Thinking of a new pickup line: you know what materiel this is? (Grab shirt)...boyfriend
+                        material.
+                    </li>
+                    <li>accidentally consented to destroying the universe</li>
+                    <li>jail is a great place to meet other people interested in crime</li>
+                    <li>I spent my quarter on righteous living</li>
+                    <li>If somebody doesn't like themselves, they have no right reproducing, why make another person
+                        that may not like themselves
+                    </li>
+                </ul>
+                <p>Click near the bottom of this website for more.</p>
+            </div>
+
+            <div id="frontend">
+                <img src="assets/images/yeshiva.jpg" width="200" height="200" alt="TU"/><img
+                    src="assets/images/royaltone.jpg" width="200" height="200" alt="RT"/>
+                <p>I have worked for CNBC, All Things Media, Yeshiva Univercity, National Parts Depot, Droga5, and
+                    various agencies.</p>
+                <p>My particular niche is single page web applications, the majority of the UI work I have done involves
+                    my competency in HTML(5), CSS, JavaScript, jQuery, SASS, LESS, JSON, XML, Photoshop, and various
+                    other smaller text, font, and debugger tools.
+                </p>
+                <ul>
+                    <li><a href="http://www.bringyourchallenges.com/" title="Bring Your Challenges">Bring Your
+                        Challenges (interactions, mobile, SEO, some behind the scenes work)</a></li>
+                    <li><a title="CompTia Ebook">CompTia Ebook platform (offline for legal reasons)</a></li>
+                    <li><a title="Pearson fctuts">Pearson MyFinanceLab Financial Calculator Tutorials (JS and mobile
+                        work, some video work)</a></li>
+                    <li><a title="Positioner JSON Tool">JSON Generator / Database creater for car parts diagrams
+                        (offline for legal reasons)</a></li>
+                    <li><a href="https://thawing-oasis-48544.herokuapp.com/" title="Anagh">Anagh Tech Site design
+                        prototype</a></li>
+                    <li><a href="http://qa.assetlibrary.cnbc.com/library/web/modules.php" title="CNBC QA">Various CNBC
+                        modules, scripts, and sliders (outdated)</a></li>
+                    <li><a href="/brocair/" title="Brocair">Brocair (OLD)</a></li>
+                    <li><a href="https://lit-tundra-99349.herokuapp.com/" title="Munno's Deli">Munno's Deli (VERY
+                        OLD)</a></li>
+                </ul>
+            </div>
+            <div id="backend"><img src="assets/images/tnpp.gif" width="200" height="200" alt="tnpp"/>
+                <p>My backend works includes work done in ASP, ASP.NET/C#, javascript and some SQL.</p>
+                <p>I have worked for Domestic Securities, National Parts Depot, and have consulted for various clients.
+                    Most of my work has been for internal applications and kiosks.</p>
+                <p>A fine online example of my work can be found at National Parts Depot TNPP website.</p>
+                <ul>
+                    <li><a href="http://www.nationalparts.com/tnpp/tnppinv.aspx" target="_blank">http://www.nationalparts.com/tnpp/tnppinv.aspx
+                        (might be down, it's their database)</a></li>
+                </ul>
+            </div>
+            <div id="flash">
+                <p>I have worked on many Flash projects in the past.<br>I'm currently working on a new project called
+                    Brimstone<br><img src="assets/images/brim1.jpg" class="Brim1"/></p>
+                <ul>
+                    <li>Universal War: Lost Civilization (has over 2.5 million downloads)</li>
+                </ul>
+                <p><a href="http://www.newgrounds.com/portal/view/87004">http://www.newgrounds.com/portal/view/87004</a>
+                </p>
+                <ul>
+                    <li>3D Pong</li>
+                </ul>
+                <p><a href="http://www.newgrounds.com/portal/view/260014">http://www.newgrounds.com/portal/view/260014</a>
+                </p>
+                <ul>
+                    <li>Retronoid FS</li>
+                </ul>
+                <p><a href="http://www.newgrounds.com/portal/view/236072">http://www.newgrounds.com/portal/view/236072</a>
+                </p>
+                <p>Most of these are available on Newgrounds but have also been featured on many other popular Flash
+                    game web pages such as:</p>
+                <ul>
+                    <li>freeworldgroup.com</li>
+                    <li>addictinggames.com</li>
+                    <li>newsandentertainment.com</li>
+                    <li>smashingames.com</li>
+                    <li>2flashgames.com</li>
+                    <li>2dplay.com</li>
+                    <li>agame.com</li>
+                    <li>flasharcade.com</li>
+                    <li>funnycrazygames.com</li>
+                    <li>coolgames.com</li>
+                    <li>blitzgamer.com</li>
+                    <li>arcadehaven.net</li>
+                </ul>
+            </div>
+            <br clear="all"/>
+        </div>
+    </div>
+
+
+</div>
+<div class="bottom">
+
+    <div id="didYou">
+        <ul>
+            <li class="show">Here's some random thoughts I've had while coding and answers to interview questions.<br>(not
+                important but click here toggle through them.)
+            </li>
+            <li>Spiders have 8 feet or in Europe 2.43 meters.</li>
+            <li>We can create an atmosphere on Mars by simply dimming the lights and playing some smooth jazz.</li>
+            <li>I think that instead of blocking people who use adblock, site's should just show all content in Comic
+                Sans in all it's glory.
+            </li>
+            <li>If I'm at work early, either I was asked to come in early, I have a deadline, or my dog woke me up
+                earlier then usual.
+            </li>
+            <li>I think everybody deserves a theme song, I just don't think anybody should choose their own.</li>
+            <li>Believe it or not you CAN have too many frameworks...</li>
+            <li>I know at LEAST 5 Chuck Norris jokes.</li>
+            <li>I'm a great tipper. 20% AFTER the tax!</li>
+            <li>I once lived in NJ and worked in NY followed by working in NJ and living in NY</li>
+            <li>I once had a dream involving cross browser issues and IE6 :(</li>
+            <li>I started JavaScript because I was good at ActionScript 1.0 while making Flash Games.</li>
+            <li>My hobbies includes Law & Order trivia, coding interesting things, and retro video games.</li>
+            <li>One day I hope to program an NES game/ROM</li>
+            <li>I didn't think the Seinfeld final episode was that bad.</li>
+            <li>Sometimes going to work feels like taking a break from life.</li>
+            <li>Nobody can beat me in Mortal Kombat 3. Trust me many have tried.</li>
+            <li>I come from a family of number people, I trained my younger brother to code, my older brother codes, my
+                dad is an accountant and investment manager, and my mom owns her own store.
+            </li>
+            <li>I find it odd that our eyes are actually in the MIDDLE of our faces and not near the top.</li>
+            <li>Watch out! I'm about to use an unsupported blink tag!</li>
+            <li>Nah, just kidding. I'm not evil.</li>
+            <li>Am I the only web developer that likes the anime Dragonball? BTW I like the anime Dragonball.</li>
+            <li>I've spent more time playing Doom then I care to admit.</li>
+            <li>Nothing beats dubstep or some good techno while coding.</li>
+            <li>Nothing beats rock when I'm done coding.</li>
+            <li>(a pot of strong coffee doesn't hurt either)</li>
+            <li>I think the Metroid franchise has the best music of any video game.</li>
+            <li>I really like C#, I need to sink my teeth into it more.</li>
+            <li>Why was the JavaScript developer sad?... Because he didn’t Node how to Express himself. (Drum Drum
+                Cymble!)
+            </li>
+            <li>How much wind will a wind mill mill if a windmill will mill wind?</li>
+            <li>I think if bigfoot existed the ultimate time tested weapon to keep it away from you would be a camera.
+            </li>
+            <li>I wasn't good at Dojo so I had to pick myself up by my Bootstraps and.... Learn more Dojo? Ok I'm out of
+                JavaScript jokes.
+            </li>
+
+        </ul>
+    </div>
+
+    Created with Photoshop, Notepad, Sublime and about four cups of coffee. // Alexander Lefkowitz // 2011 - 2017
+</div>
 
 <!-- script tags should almost always go on the bottom of a page, there
      are many reasons for this, it allows the page contents to load and

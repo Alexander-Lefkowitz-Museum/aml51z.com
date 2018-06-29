@@ -59,7 +59,7 @@ a:active {
 	padding: 2px;
 	min-height: 415px;
 }
-#statement, #skills,#companies,#resume,#recruiter,
+#memorial, #portfolio, #statement, #skills,#companies,#resume,#recruiter,
 #frontend,#backend, #flash, #hateMachine,#politics,#humor {
 	display:none;
 }
@@ -337,4 +337,30 @@ a:active {
 }
 .bump {
 	margin-top:8px;
+}
+
+.text-center {
+	text-align: center;
+	margin: 0 auto;
+	text-indent: 0em !important;
+}
+#memorial .latest_photo {
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 100%;
+}
+#memorial .memorium_name {
+	font-size: 20pt;
+	font-weight: bold;
+}
+#memorial .memorium_date {
+	font-size: 14pt;
+	font-weight: normal;
+}
+#memorial .memorium_writeup {
+	display: block;
+	margin-top: 15px;
+	font-size: 11pt;
 }

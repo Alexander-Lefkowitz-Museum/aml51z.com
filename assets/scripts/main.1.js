@@ -7,6 +7,14 @@ var portfolio = {
 		$("div.leftSection").slideDown('slow', function () {
 			console.log(location.hash.slice(1,99));
 			switch (location.hash.slice(1,99)) {
+				case "memorial":
+				$('div#memorial').slideDown('fast');
+				self_setTitle("In Memoriam");
+				break;
+                case "portfolio":
+				$('div#portfolio').slideDown('fast');
+				self_setTitle("Portfolio / Legacy");
+				break;
 				case "skills":
 				$('div#skills').slideDown('fast');
 				 self_setTitle("Education and Skills");
@@ -43,9 +51,13 @@ var portfolio = {
 				$('div#politics').slideDown('fast');
 			 	self_setTitle("Politics");
 			 	break;
-			 	default:
-				$("#statement").fadeIn('slow');
+                case "statement":
+				$('div#statement').slideDown('fast');
 				self_setTitle("Personal Statement");
+				break;
+			 	default:
+				$("#memorial").fadeIn('slow');
+				self_setTitle("In Memoriam");
 				break
 			}
 		});
@@ -57,6 +69,16 @@ var portfolio = {
 		var self = this;
 		var self_setTitle = self.setTitle;
 		//yes I know this isn't the most optimal way of doing this, this will be rewritten soon (Alex L)
+		$('.memorialHref').on("click", function() {
+			self.clearFades();
+			$('#memorial').slideDown('fast');
+			self_setTitle("In Memoriam");
+		});
+        $('.portfolioHref').on("click", function() {
+            self.clearFades();
+            $('#portfolio').slideDown('fast');
+            self_setTitle("Portfolio / Legacy");
+        });
 		$('.educationHref').on("click", function() {
 			self.clearFades();
 			 $('div#skills').slideDown('fast');
@@ -132,7 +154,9 @@ var portfolio = {
 		}).fadeIn('medium');
 	},
 	clearFades: function () {
-		$("#statement,"
+		$("#memorial,"
+		 +"#portfolio,"
+		 +"#statement,"
 		 +"#hateMachine,"
 		 +"#politics,"
 		 +"#skills,"
